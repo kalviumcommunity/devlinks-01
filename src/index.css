@@ -10,7 +10,7 @@ body { font-family: system-ui, sans-serif; background: #f5f6fb; margin: 0; color
 
 .btn { padding: 0.7rem 1rem; border-radius: 10px; border: none; cursor: pointer; text-decoration: none; font-size: 1rem; }
 /* BUG (issue #5): primary button uses grey placeholder instead of var(--brand) */
-.btn-primary { background: #999999; color: #fff; }
+.btn-primary:hover { background: #999999; color: #fff; }
 /* BUG (issue #12): buttons have no :hover state */
 /* BUG (issue #8): layout is not responsive on small screens (no @media rule) */
 
