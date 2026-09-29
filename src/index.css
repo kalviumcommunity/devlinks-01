@@ -1,17 +1,84 @@
-:root { --brand: #4f46e5; }
+:root {
+  --brand: #4f46e5;
+  --brand-hover: #4338ca;
+}
 
-body { font-family: system-ui, sans-serif; background: #f5f6fb; margin: 0; color: #1b1f2a; }
+* {
+  box-sizing: border-box;
+}
 
-.card { max-width: 420px; margin: 2rem auto; background: #fff; border-radius: 16px; padding: 2rem; text-align: center; }
-.avatar { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; }
-.bio { color: #5b6472; }
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f6fb;
+  margin: 0;
+  padding: 1rem;
+  color: #1b1f2a;
+}
 
-.links { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1.2rem; }
+.card {
+  max-width: 420px;
+  width: 100%;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
 
-.btn { padding: 0.7rem 1rem; border-radius: 10px; border: none; cursor: pointer; text-decoration: none; font-size: 1rem; }
-/* BUG (issue #5): primary button uses grey placeholder instead of var(--brand) */
-.btn-primary { background: #999999; color: #fff; }
-/* BUG (issue #12): buttons have no :hover state */
-/* BUG (issue #8): layout is not responsive on small screens (no @media rule) */
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-footer { margin-top: 1.5rem; color: #8a90a2; font-size: 0.85rem; }
+.bio {
+  color: #5b6472;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: #fff;
+}
+
+.btn:hover {
+  background: var(--brand-hover);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+footer {
+  margin-top: 1.75rem;
+  color: #8a90a2;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin: 1rem auto;
+    padding: 1.5rem 1rem;
+  }
+}

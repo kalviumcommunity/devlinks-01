@@ -1,4 +1,3 @@
 export default function Bio() {
-  // BUG (issue #7): placeholder bio text still here
-  return <p className="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  return <p className="bio">Full-stack developer & open-source enthusiast. Building helpful tools for the web.</p>
 }
