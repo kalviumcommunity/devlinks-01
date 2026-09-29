@@ -14,4 +14,13 @@ body { font-family: system-ui, sans-serif; background: #f5f6fb; margin: 0; color
 /* BUG (issue #12): buttons have no :hover state */
 /* BUG (issue #8): layout is not responsive on small screens (no @media rule) */
 
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 2rem);
+    margin: 1rem auto;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+}
+
 footer { margin-top: 1.5rem; color: #8a90a2; font-size: 0.85rem; }
