@@ -15,3 +15,21 @@ body { font-family: system-ui, sans-serif; background: #f5f6fb; margin: 0; color
 /* BUG (issue #8): layout is not responsive on small screens (no @media rule) */
 
 footer { margin-top: 1.5rem; color: #8a90a2; font-size: 0.85rem; }
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
