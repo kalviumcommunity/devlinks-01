@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 export default function App() {
   // BUG (issue #6): leftover debug console.log
-  console.log('debug: App rendered')
+  
   return (
     <main className="card">
       <Header />
