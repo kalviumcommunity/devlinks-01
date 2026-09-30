@@ -1,6 +1,6 @@
 const links = [
   // BUG (issue #3): broken URL ("htps" instead of "https")
-  { label: 'GitHub', url: 'htps://github.com/kalviumcommunity' },
+  { label: 'GitHub', url: 'https://github.com/kalviumcommunity' },
   { label: 'Twitter', url: 'https://twitter.com' },
 ]
 
