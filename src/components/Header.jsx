@@ -2,9 +2,9 @@ export default function Header() {
   return (
     <header>
       {/* BUG (issue #2): avatar image is missing alt text */}
-      <img className="avatar" src="/avatar.png" />
+      <img className="avatar" src="/avatar.png" alt="Avatar"/>
       {/* BUG (issue #1): "Wecome" should be "Welcome" */}
-      <h1>Wecome to DevLinks</h1>
+      <h1>Welcome to DevLinks</h1>
     </header>
   )
 }
