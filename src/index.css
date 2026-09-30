@@ -9,6 +9,9 @@ body { font-family: system-ui, sans-serif; background: #f5f6fb; margin: 0; color
 .links { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1.2rem; }
 
 .btn { padding: 0.7rem 1rem; border-radius: 10px; border: none; cursor: pointer; text-decoration: none; font-size: 1rem; }
+.btn:hover {
+  opacity: 0.8;
+}
 /* BUG (issue #5): primary button uses grey placeholder instead of var(--brand) */
 .btn-primary { background: #999999; color: #fff; }
 /* BUG (issue #12): buttons have no :hover state */
